@@ -1,0 +1,45 @@
+<div style="display: flex; flex-direction: row; justify-content: space-evenly;">
+  <div style="display: flex;flex-direction: column;">
+    <h1 style="margin-top: 50px;">Room List</h1>
+    <div class="overflow-auto" style="height: 300px; width: 300px;
+    border: solid black 5px;" id="roomListView">
+      <h1>1213</h1>
+      <h1>1213</h1>
+      <h1>1213</h1>
+      <h1>1213</h1>
+  
+    </div>
+
+    <div style="margin-top: 50px;">
+      <label>Room Name:</label>
+      <input type="text" id="newRoomName" style="
+        margin-right: 20px;
+        border: solid black 5px;">
+      <br>
+      <button class="btn btn-secondary" (click)="createRoom()">Create Room</button>
+      <br>
+      <small id="roomWarning"></small>
+
+    </div>
+  </div>
+
+  <div>
+    <h1 style="margin-top: 50px;">Room: {{talkInRoom}}</h1>
+    <div class="overflow-auto" style="height: 300px; width: 400px; 
+    border: solid black  5px;" id=roomMessageView>
+    <h1>
+      Click left to enter a room
+    </h1>
+  
+    
+      
+    </div>
+
+    <div style="display: flex; flex-direction: row; align-items: flex-start; margin-top: 50px;">
+      <textarea name="message" id="roomMessage" cols="30" rows="5"
+      style="border: solid black  5px; margin-right: 20px;"></textarea>
+      <button class="btn btn-success" (click)="sendMessage()">Send</button>
+    </div>
+  </div>
+
+</div>
